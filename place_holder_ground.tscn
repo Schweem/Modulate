@@ -1,0 +1,463 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw0gfhipr5i4"]
+
+[ext_resource type="Script" path="res://colorUpdate.gd" id="1_q5q31"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iool"]
+size = Vector2(1.99928, 2.99877)
+
+[node name="placeHolderGround" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-1200, 67)
+scale = Vector2(915, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1.01093, 1.49258)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround2" type="Node2D" parent="."]
+position = Vector2(2566, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround2"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround2/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround2/StaticBody2D"]
+position = Vector2(0.99858, 1.50383)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="."]
+position = Vector2(1283, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/StaticBody2D"]
+position = Vector2(1.01076, 1.50383)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="placeHolderGround"]
+position = Vector2(-581, -48)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround/placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/placeHolderGround/StaticBody2D"]
+position = Vector2(1.00162, 1.49633)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="placeHolderGround/placeHolderGround"]
+position = Vector2(51, -21)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+position = Vector2(1.0001, 1.50383)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(42, -27)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+position = Vector2(0.99858, 1.50008)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(45, 12)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+position = Vector2(0.99858, 1.49633)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(27, 21)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+position = Vector2(0.99858, 1.50008)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(33, 24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/placeHolderGround/StaticBody2D"]
+position = Vector2(0.99858, 1.50383)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround12" type="Node2D" parent="."]
+position = Vector2(3583, 48)
+scale = Vector2(0.280005, 0.16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround12"]
+position = Vector2(-659.001, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround12/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 3.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround12/StaticBody2D"]
+position = Vector2(1.00315, 1.53009)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround3" type="Node2D" parent="."]
+position = Vector2(4552, -9)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround3"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround3/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround3/StaticBody2D"]
+position = Vector2(1.00162, 1.50008)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround4" type="Node2D" parent="."]
+position = Vector2(-1826, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround4"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround4/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround4/StaticBody2D"]
+position = Vector2(1.00467, 1.50758)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround5" type="Node2D" parent="."]
+position = Vector2(-1355, 12)
+scale = Vector2(0.159999, 0.0413784)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround5"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround5/StaticBody2D"]
+offset_top = -1.0
+offset_right = 2.0
+offset_bottom = 2.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround5/StaticBody2D"]
+position = Vector2(0.998389, 0.510969)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround6" type="Node2D" parent="."]
+position = Vector2(5128, -596)
+scale = Vector2(0.159999, 9.76138)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround6"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround6/StaticBody2D"]
+offset_left = -10.0
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround6/StaticBody2D"]
+position = Vector2(0.993633, 1.50025)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround7" type="Node2D" parent="."]
+position = Vector2(5700, -763)
+scale = Vector2(0.159999, 9.76138)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround7"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround7/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround7/StaticBody2D"]
+position = Vector2(1.00315, -0.500218)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround8" type="Node2D" parent="."]
+position = Vector2(5679, 2585)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround8"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround8/StaticBody2D"]
+offset_left = -2.0
+offset_right = 2.0
+offset_bottom = 3.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround8/StaticBody2D"]
+position = Vector2(1.00467, 1.50008)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround9" type="Node2D" parent="."]
+position = Vector2(7701, 2585)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround9"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround9/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround9/StaticBody2D"]
+position = Vector2(0.997057, 1.50008)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround10" type="Node2D" parent="."]
+position = Vector2(6704, 2703)
+scale = Vector2(0.2, 0.24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround10"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround10/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround10/StaticBody2D"]
+position = Vector2(1.00314, 1.49883)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround11" type="Node2D" parent="."]
+position = Vector2(8616, 2629)
+scale = Vector2(0.2, 0.24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround11"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround11/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround11/StaticBody2D"]
+position = Vector2(1.00314, 1.49883)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround13" type="Node2D" parent="."]
+position = Vector2(9180, 2545)
+scale = Vector2(0.2, 0.24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround13"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround13/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround13/StaticBody2D"]
+position = Vector2(1.00314, 1.49883)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround14" type="Node2D" parent="."]
+position = Vector2(9604, 2357)
+scale = Vector2(0.0353576, 0.0139645)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround14"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround14/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround14/StaticBody2D"]
+position = Vector2(1.00314, 1.4832)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround15" type="Node2D" parent="."]
+position = Vector2(10743, 2077)
+scale = Vector2(1.16, 0.24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround15"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround15/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround15/StaticBody2D"]
+position = Vector2(1.00314, 1.49883)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround16" type="Node2D" parent="."]
+position = Vector2(13107, 1359)
+scale = Vector2(1.16, 0.24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround16"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround16/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround16/StaticBody2D"]
+position = Vector2(1.00314, 1.49883)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround17" type="Node2D" parent="."]
+position = Vector2(17795, 2326)
+scale = Vector2(1.16, 0.24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround17"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround17/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround17/StaticBody2D"]
+position = Vector2(1.00314, 1.49883)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround18" type="Node2D" parent="."]
+position = Vector2(24933, -3415)
+scale = Vector2(5.36756, 14.6481)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround18"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround18/StaticBody2D"]
+offset_left = -0.170489
+offset_top = -0.198761
+offset_right = 1.82951
+offset_bottom = 2.80124
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround18/StaticBody2D"]
+position = Vector2(1.00221, 1.49953)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")

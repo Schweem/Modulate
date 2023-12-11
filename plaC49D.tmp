@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw0gfhipr5i4"]
+
+[ext_resource type="Script" path="res://colorUpdate.gd" id="1_q5q31"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iool"]
+size = Vector2(2.00325, 1.02381)
+
+[node name="placeHolderGround" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+script = ExtResource("1_q5q31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1.00467, 0.511903)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")
+
+[node name="placeHolderGround" type="Node2D" parent="."]
+position = Vector2(445, -64)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="placeHolderGround"]
+position = Vector2(-659, 67)
+scale = Vector2(656.933, 266.652)
+
+[node name="ColorRect" type="ColorRect" parent="placeHolderGround/StaticBody2D"]
+offset_right = 2.0
+offset_bottom = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeHolderGround/StaticBody2D"]
+position = Vector2(1.00467, 0.511903)
+scale = Vector2(1.00251, 1)
+shape = SubResource("RectangleShape2D_6iool")

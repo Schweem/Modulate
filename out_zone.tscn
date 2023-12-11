@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://lpf2uoo2m2vs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmlge"]
+size = Vector2(20, 123)
+
+[node name="outZone" type="Node2D"]
+position = Vector2(18805, -5384)
+rotation = 1.57079
+scale = Vector2(-1.33333, 189.369)
+
+[node name="Area2D" type="Area2D" parent="." groups=["oob"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_lmlge")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+visible = false
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 33.0
+offset_bottom = 34.0
+scale = Vector2(0.320001, 0.28)
+color = Color(1, 0.454902, 1, 1)

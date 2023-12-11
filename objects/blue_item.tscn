@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://chwa6gtihqcia"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmlge"]
+
+[node name="blueItem" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="." groups=["red"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lmlge")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 33.0
+offset_bottom = 34.0
+scale = Vector2(0.320001, 0.28)
+color = Color(0.407843, 0.796078, 0.921569, 1)

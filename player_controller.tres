@@ -1,0 +1,32 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b7de0tljwsm8d"]
+
+[sub_resource type="Shader" id="Shader_to2s8"]
+code = "shader_type canvas_item;
+
+void fragment() {
+    // Sample the original sprite texture
+    vec4 originalColor = texture(TEXTURE, SCREEN_UV);
+
+    // Sample the neighboring pixels
+    vec4 leftColor = texture(TEXTURE, SCREEN_UV - vec2(1.0 / SCREEN_SIZE.x, 0));
+    vec4 rightColor = texture(TEXTURE, SCREEN_UV + vec2(1.0 / SCREEN_SIZE.x, 0));
+    vec4 topColor = texture(TEXTURE, SCREEN_UV - vec2(0, 1.0 / SCREEN_SIZE.y));
+    vec4 bottomColor = texture(TEXTURE, SCREEN_UV + vec2(0, 1.0 / SCREEN_SIZE.y));
+
+    // Calculate the average color of neighboring pixels
+    vec4 averageColor = (leftColor + rightColor + topColor + bottomColor) * 0.25;
+
+    // Calculate the difference between the original color and the average color
+    vec4 outlineColor = originalColor - averageColor;
+
+    // Set the alpha value based on the difference (threshold)
+    float threshold = 0.1; // Adjust this threshold as needed
+    float alpha = step(threshold, length(outlineColor.rgb));
+
+    // Output the final color with the outline
+    COLOR = vec4(originalColor.rgb, alpha);
+}
+"
+
+[resource]
+shader = SubResource("Shader_to2s8")

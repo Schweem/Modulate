@@ -1,0 +1,279 @@
+[gd_scene load_steps=30 format=3 uid="uid://bgkb7h2w2j41t"]
+
+[ext_resource type="PackedScene" uid="uid://cw0gfhipr5i4" path="res://place_holder_ground.tscn" id="1_8pr2f"]
+[ext_resource type="PackedScene" uid="uid://w20h7b51gv8b" path="res://player_controller.tscn" id="1_givub"]
+[ext_resource type="PackedScene" uid="uid://d3x7lpqglhtp8" path="res://objects/purple_item.tscn" id="2_bbj6u"]
+[ext_resource type="PackedScene" uid="uid://caa6r2hoxdglg" path="res://objects/red_item.tscn" id="3_jyyuy"]
+[ext_resource type="Script" path="res://background_update.gd" id="5_m0jpi"]
+[ext_resource type="Script" path="res://lightChange.gd" id="6_me3fq"]
+[ext_resource type="PackedScene" uid="uid://c8ode34vjsf3a" path="res://end_item.tscn" id="7_p3fgr"]
+[ext_resource type="PackedScene" uid="uid://lpf2uoo2m2vs" path="res://out_zone.tscn" id="8_u0wmj"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_iqiby"]
+polygon = PackedVector2Array(-2490.41, 66.6834, -1716.46, 66.6834, -1216.78, 66.6834, -980.406, 66.6834, -520.622, 66.6834, -269.287, 66.6834, -47.8733, 66.6834, 30.9182, 66.6834, 30.9182, 18.9102, 81.7836, 18.9102, 81.7836, -1.99055, 123.673, -1.99055, 123.673, -28.863, 1434.2, -28.863, 1434.2, -16.9197, 1479.09, -16.9197, 1479.09, 3.9811, 1506.01, 3.9811, 1506.01, 27.8677, 1538.93, 27.8677, 1538.93, 66.6834, 3200.52, 66.6833, 3200.52, 332.421, -2490.4, 332.421)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0aied"]
+polygon = PackedVector2Array(3395.41, 186.862, 3395.41, 57.8623, 3762.41, 57.8623, 3762.41, 186.862)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1dpdj"]
+polygon = PackedVector2Array(-638.541, 186.789, -638.541, 132.724, -625.563, 132.739, -464.139, 132.696, -464.139, 659.931, -320.258, 659.931, -320.389, 822.533, -423.386, 822.533, -557.368, 822.533, -557.628, 186.964)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_058u0"]
+polygon = PackedVector2Array(5595, -99, 5803, -99, 5807, 2494, 5595, 2494)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_jgawe"]
+polygon = PackedVector2Array(722, -1798, 934, -1573, 1116, -1721, 959, -1764)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_bqdvj"]
+polygon = PackedVector2Array(2345, -1187, 2548, -959, 2468, -1412)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_6nuul"]
+polygon = PackedVector2Array(-1465, 62, -1465, 29, -1254, 29, -1254, 62)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7ycg7"]
+polygon = PackedVector2Array(-2126, -424, -2128, -573, -1729, -337)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_fbfrx"]
+polygon = PackedVector2Array(5109, -2039, 5441, -1893, 5386, -2165)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_dglyl"]
+polygon = PackedVector2Array(7038, 2652, 8352, 2652, 8352, 3452, 7038, 3452)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_nmsdo"]
+polygon = PackedVector2Array(6568, 2719, 6831, 2719, 6832, 2912, 6568, 2912)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_3i8o7"]
+polygon = PackedVector2Array(8407, 2626, 8671, 2626, 8670, 2818, 8407, 2818)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1ggw7"]
+polygon = PackedVector2Array(8681, 2582, 8727, 2582, 8727, 2593, 8681, 2593)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7ixd6"]
+polygon = PackedVector2Array(8739, 2551, 9002, 2551, 9002, 2744, 8739, 2743)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0c6yq"]
+polygon = PackedVector2Array(7603, 931, 7818, 917, 7886, 729)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_k872v"]
+polygon = PackedVector2Array(10585, 118, 11311, -689, 12280, -850)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5j6w2"]
+polygon = PackedVector2Array(12980, -1873, 13222, -1819, 13572, -2223)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_d0b64"]
+polygon = PackedVector2Array(9975, 2093, 9975, 2285, 11499, 2285, 11499, 2093)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_m6kvx"]
+polygon = PackedVector2Array(12340, 1375, 12340, 1568, 13864, 1568, 13864, 1375)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_glu21"]
+polygon = PackedVector2Array(17026, 2342, 18553, 2342, 18553, 2534, 17027, 2534)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_myuhe"]
+polygon = PackedVector2Array(21392, -2433, 21429.5, -2433.06, 28449, -2444, 28461, 9266, 21395, 9284)
+
+[node name="MainScene" type="Node2D"]
+
+[node name="placeHolderGround" parent="." instance=ExtResource("1_8pr2f")]
+position = Vector2(-4, 0)
+
+[node name="PlayerController" parent="." instance=ExtResource("1_givub")]
+position = Vector2(-2123, -169)
+
+[node name="dirt" parent="." instance=ExtResource("2_bbj6u")]
+position = Vector2(-37, 5)
+
+[node name="dirt" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(934, -95)
+
+[node name="dirt2" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(2516, -63)
+
+[node name="dirt3" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(3338, -217)
+scale = Vector2(1, 8.32)
+
+[node name="dirt4" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(-1084, -85)
+scale = Vector2(1, 2.6)
+
+[node name="dirt4" parent="dirt/dirt4" instance=ExtResource("2_bbj6u")]
+position = Vector2(6245, -70)
+scale = Vector2(1, 2.6592)
+
+[node name="dirt5" parent="dirt/dirt4" instance=ExtResource("2_bbj6u")]
+position = Vector2(6555.41, 907.926)
+rotation = 1.56448
+scale = Vector2(1.03342, 3.36408)
+
+[node name="dirt6" parent="dirt/dirt4" instance=ExtResource("2_bbj6u")]
+position = Vector2(6503, 301)
+rotation = -1.61747
+scale = Vector2(1, 4.0545)
+
+[node name="dirt7" parent="dirt/dirt4" instance=ExtResource("2_bbj6u")]
+position = Vector2(4959, -128)
+scale = Vector2(1, 6.76)
+
+[node name="dirt5" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(-2366, -95)
+scale = Vector2(1, 2.6)
+
+[node name="dirt6" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(-1793, -101)
+scale = Vector2(1, 2.6)
+
+[node name="dirt7" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(6973, 2507)
+scale = Vector2(1, 11.2592)
+
+[node name="dirt8" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(8916, 1118)
+scale = Vector2(1, 35.1792)
+
+[node name="dirt9" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(9882, 1100)
+scale = Vector2(1, 35.1792)
+
+[node name="dirt10" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(12097, 1118)
+scale = Vector2(1, 35.1792)
+
+[node name="dirt11" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(16623, -326)
+rotation = 0.785397
+scale = Vector2(1, 53.1397)
+
+[node name="dirt12" parent="dirt" instance=ExtResource("2_bbj6u")]
+position = Vector2(18805, -5384)
+rotation = 1.57079
+scale = Vector2(-1.33333, 189.369)
+
+[node name="background" type="Node2D" parent="."]
+
+[node name="backGround" type="ColorRect" parent="background"]
+z_index = -1
+offset_left = -48988.0
+offset_top = -84536.0
+offset_right = -48669.0
+offset_bottom = -81393.0
+scale = Vector2(328.593, 31.92)
+color = Color(0.207843, 0.207843, 0.207843, 1)
+script = ExtResource("5_m0jpi")
+
+[node name="redItem" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(-1355, -62)
+
+[node name="lightShades" type="Node2D" parent="."]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(8, 0)
+scale = Vector2(1.00265, 1.00475)
+occluder = SubResource("OccluderPolygon2D_iqiby")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(-0.413574, 1.13767)
+occluder = SubResource("OccluderPolygon2D_0aied")
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(8793.59, -594.862)
+scale = Vector2(7.68, 4.92)
+occluder = SubResource("OccluderPolygon2D_1dpdj")
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(-3, -10)
+occluder = SubResource("OccluderPolygon2D_058u0")
+
+[node name="LightOccluder2D5" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_jgawe")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="lightShades/LightOccluder2D5"]
+occluder = SubResource("OccluderPolygon2D_bqdvj")
+
+[node name="LightOccluder2D6" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(0, -25)
+occluder = SubResource("OccluderPolygon2D_6nuul")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="lightShades"]
+position = Vector2(1353, -3348)
+rotation = 0.261799
+scale = Vector2(1, 0.319692)
+energy = 0.86
+shadow_enabled = true
+script = ExtResource("6_me3fq")
+
+[node name="LightOccluder2D7" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(984, -2394)
+occluder = SubResource("OccluderPolygon2D_7ycg7")
+
+[node name="LightOccluder2D8" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_fbfrx")
+
+[node name="LightOccluder2D9" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_dglyl")
+
+[node name="LightOccluder2D10" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_nmsdo")
+
+[node name="LightOccluder2D11" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(73, 19)
+occluder = SubResource("OccluderPolygon2D_3i8o7")
+
+[node name="LightOccluder2D12" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(896, -224)
+occluder = SubResource("OccluderPolygon2D_1ggw7")
+
+[node name="LightOccluder2D13" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(305, 10)
+occluder = SubResource("OccluderPolygon2D_7ixd6")
+
+[node name="LightOccluder2D14" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(788, -518)
+occluder = SubResource("OccluderPolygon2D_0c6yq")
+
+[node name="LightOccluder2D15" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(3394, -10424)
+occluder = SubResource("OccluderPolygon2D_k872v")
+
+[node name="LightOccluder2D16" type="LightOccluder2D" parent="lightShades"]
+position = Vector2(4547, -9568)
+occluder = SubResource("OccluderPolygon2D_5j6w2")
+
+[node name="LightOccluder2D17" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_d0b64")
+
+[node name="LightOccluder2D18" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_m6kvx")
+
+[node name="LightOccluder2D19" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_glu21")
+
+[node name="LightOccluder2D20" type="LightOccluder2D" parent="lightShades"]
+occluder = SubResource("OccluderPolygon2D_myuhe")
+
+[node name="redItem2" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(6700, 2652)
+
+[node name="redItem3" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(1580, -76)
+
+[node name="redItem4" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(8879, 2306)
+
+[node name="redItem5" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(5410, 1375)
+scale = Vector2(10.1197, 9.82917)
+
+[node name="endItem" parent="." instance=ExtResource("7_p3fgr")]
+
+[node name="redItem8" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(13199, 1003)
+scale = Vector2(10.1197, 9.82917)
+
+[node name="redItem7" parent="." instance=ExtResource("3_jyyuy")]
+position = Vector2(9285, 2272)
+scale = Vector2(10.1197, 9.82917)
+
+[node name="outZone" parent="." instance=ExtResource("8_u0wmj")]
+position = Vector2(9975, 6219)
+scale = Vector2(-1.33333, 501.609)

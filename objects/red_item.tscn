@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://caa6r2hoxdglg"]
+
+[ext_resource type="Texture2D" uid="uid://coy8loj0khanf" path="res://objects/coin.png" id="1_la5hn"]
+[ext_resource type="Script" path="res://objects/rotate.gd" id="2_lb5yc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmlge"]
+size = Vector2(6, 6)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_jlg21"]
+polygon = PackedVector2Array(-3, -3, 3, -3, 3, 3, -3, 3)
+
+[node name="redItem" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="." groups=["red"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lmlge")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_la5hn")
+script = ExtResource("2_lb5yc")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Area2D"]
+occluder = SubResource("OccluderPolygon2D_jlg21")
